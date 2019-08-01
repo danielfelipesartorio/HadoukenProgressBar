@@ -1,0 +1,31 @@
+<idea-plugin>
+  <id>hadouken.progress.bar</id>
+  <name>Hadouken Progress Bar</name>
+  <version>1.00</version>
+  <vendor email="daniel_sartorio@hotmail.com">Daniel Felipe Sartorio</vendor>
+
+  <description><![CDATA[
+      Awesome progress bar for IJ based IDEs. Based on the Nyan Progress Bar by Dmitry Batkovich
+    ]]></description>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="141.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+  <application-components>
+    <component>
+      <implementation-class>HadoukenApplicationComponent</implementation-class>
+    </component>
+  </application-components>
+</idea-plugin>
