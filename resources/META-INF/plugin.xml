@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>hadouken.progress.bar</id>
   <name>Hadouken Progress Bar</name>
-  <version>1.00</version>
+  <version>1.01</version>
   <vendor email="daniel_sartorio@hotmail.com">Daniel Felipe Sartorio</vendor>
 
   <description><![CDATA[
