@@ -26,7 +26,6 @@ public class HadoukenProgressBarUi extends BasicProgressBarUI {
     static {
     }
 
-    @SuppressWarnings({"MethodOverridesStaticMethodOfSuperclass", "UnusedDeclaration"})
     public static ComponentUI createUI(JComponent c) {
         c.setBorder(JBUI.Borders.empty().asUIResource());
         return new HadoukenProgressBarUi();
@@ -55,7 +54,7 @@ public class HadoukenProgressBarUi extends BasicProgressBarUI {
 
     private volatile int offset = 0;
     private volatile int offset2 = 0;
-    private volatile int velocity = 1;
+    private volatile int velocity = 10;
 
     @Override
     protected void paintIndeterminate(Graphics g2d, JComponent c) {
@@ -131,21 +130,22 @@ public class HadoukenProgressBarUi extends BasicProgressBarUI {
         }
 
         //button
+
         offset = (offset + 1) % getPeriodLength();
         offset2 += velocity;
         if (offset2 <= 2) {
             offset2 = 2;
-            velocity = 1;
+            velocity = 10;
         } else if (offset2 >= w - JBUI.scale(15)) {
             offset2 = w - JBUI.scale(15);
-            velocity = -1;
+            velocity = -10;
         }
         Icon scaledIcon = velocity > 0 ? ((ScalableIcon) HadoukenIcons.HADOUKEN_ICON) : ((ScalableIcon) HadoukenIcons.RHADOUKEN_ICON);
-        scaledIcon.paintIcon(progressBar, g, offset2 - JBUI.scale(16), -JBUI.scale(6));
+        scaledIcon.paintIcon(progressBar, g, offset2 , -JBUI.scale(6));
 
         //overlay
-        HadoukenIcons.RYU_ICON.paintIcon(progressBar, g, -JBUI.scale(8), 0);
-        HadoukenIcons.KEN_ICON.paintIcon(progressBar, g, barRectWidth - JBUI.scale(20), 0);
+        ((ScalableIcon)  HadoukenIcons.RYU_ICON).paintIcon(progressBar, g, JBUI.scale(0), 0);
+        ((ScalableIcon)  HadoukenIcons.KEN_ICON).paintIcon(progressBar, g, JBUI.scale(0), 0);
 
         config.restore();
     }
@@ -209,10 +209,10 @@ public class HadoukenProgressBarUi extends BasicProgressBarUI {
                     amountFull, b);
         }
         //button
-        HadoukenIcons.HADOUKEN_ICON.paintIcon(progressBar, g2, amountFull - JBUI.scale(16), -JBUI.scale(6));
+        HadoukenIcons.HADOUKEN_ICON.paintIcon(progressBar, g2, amountFull - JBUI.scale(1024-32), -JBUI.scale(6));
 
         //overlay
-        HadoukenIcons.RYU_ICON.paintIcon(progressBar, g2, -JBUI.scale(8), 0);
+        HadoukenIcons.RYU_ICON.paintIcon(progressBar, g2, JBUI.scale(0), 0);
         config.restore();
     }
 
@@ -253,12 +253,7 @@ public class HadoukenProgressBarUi extends BasicProgressBarUI {
         g2.setClip(oldClip);
     }
 
-    @Override
-    protected int getBoxLength(int availableLength, int otherDimension) {
-        return availableLength;
-    }
-
-    protected int getPeriodLength() {
+    private int getPeriodLength() {
         return JBUI.scale(16);
     }
 

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0eda51eb-3d1d-47be-96ee-38f0d08ade9f" name="Changes" comment="updated for 2019.2">
+      <change beforePath="$PROJECT_DIR$/HadoukenProgressBar.jar" beforeDir="false" afterPath="$PROJECT_DIR$/HadoukenProgressBar.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HadoukenApplicationComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HadoukenApplicationComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HadoukenProgressBarUi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HadoukenProgressBarUi.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="28yLzn5XoRv79ZH0lxXbCCDWpUG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/daniel.sartorio/Documents/Hadouken/HadoukenProgressBar.jar&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0eda51eb-3d1d-47be-96ee-38f0d08ade9f" name="Changes" comment="" />
+      <created>1652184143086</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652184143086</updated>
+    </task>
+    <task id="LOCAL-00001" summary="updated for 2019.2">
+      <created>1652184319667</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652184319667</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updated for 2019.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated for 2019.2" />
+  </component>
+</project>

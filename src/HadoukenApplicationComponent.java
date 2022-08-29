@@ -11,6 +11,7 @@ import javax.swing.*;
 public class HadoukenApplicationComponent {
     public HadoukenApplicationComponent() {
         LafManager.getInstance().addLafManagerListener(__ -> updateProgressBarUi());
+        updateProgressBarUi();
     }
     private void updateProgressBarUi() {
         UIManager.put("ProgressBarUI", HadoukenProgressBarUi.class.getName());
